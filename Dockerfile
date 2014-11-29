@@ -11,7 +11,7 @@ RUN chmod +x /usr/local/sbin/start.sh
 RUN yum install -y cassandra21 && yum clean all \
   && rm /etc/security/limits.d/cassandra.conf
 
-EXPOSE 7000 7001 9042
+EXPOSE 7000 7001 7199 9042 9160
 
 VOLUME ["/var/lib/cassandra"]
 
